@@ -13,9 +13,9 @@ The function should:
   2. Create and return an object using the received values  
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
 }
+  
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Test your createMenuItems function by doing the following:
@@ -66,7 +66,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console
 */
-
+console.log([0]["feedback"])
 
 
 
@@ -83,7 +83,16 @@ Reyna's feedback is missing! Use what you know to do the following:
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
+const reviews = {
+  name: "Reyna",
+  rating: 3.5,
+  feedback: "",
+  thefeedback: function(){
+      console.log( this.feedback + ' this place is chill with really cool people, great for getting work done on weekdays');
+  },
+};
 
+reviews.thefeedback();
 
 
 
@@ -98,8 +107,9 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(arr,index) {
+  `${arr[index].name} gave the restaurant a `
+  `${arr[index][name]} gave the restaurant a `
 }
 
 
